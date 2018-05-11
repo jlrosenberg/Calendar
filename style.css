@@ -48,6 +48,7 @@
   margin:0;
   padding:2px;
   background-color: #ddd;
+  text-overflow: ellipsis;
 
 }
 
@@ -64,30 +65,102 @@
 
 }
 
+.calendar-grid-box{
+  width:
+}
+
 .calendar-event-container{
   height:100px;
   margin:0px;
   padding:0px;
   padding-top:0px;
   border-spacing: 0px;
+  width:inherit;
 
 
 }
 
 .calendar-event{
+background-color: #1abc9c;
   margin:3px;
   padding:2px;
   padding-left:5px;
   cursor:pointer;
+  width:inherit;
+  display:block;
+  color:#333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
 
 
   border-radius:5px;
   border:1px solid #DCDCDC;
 }
 
+
 .calendar-number-label{
   text-align:right;
   background-color:	#F5F5F5;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active{
+  text-decoration:none;
+  color:#333;
+}
+
+.event-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-content {
+  background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 table{
@@ -125,9 +198,23 @@ body {font-family: Verdana, sans-serif;}
   }
 }
 
+@media screen and (max-width:520px) {
+  #calendar-container{
+     width:400px;
+     padding: 0px;
+  }
+}
+
+
 @media screen and (max-width:420px) {
   #calendar-container{
     width:100%;
     padding:0px;
   }
+
+  .calendar-event{
+  background-color: #1abc9c;
+    margin:0px;
+    padding:0px;
+    padding-left:0px;
 }

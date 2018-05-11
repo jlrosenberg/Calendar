@@ -2,9 +2,14 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="cal.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+
 
   <div id="calendar-container">
     <div id="calendar">
@@ -47,7 +52,7 @@
     <table style="width:100%;">
 
       <tr style="background-color: #ddd;
-      width=100%;">
+      width:inherit;">
       <th class="calendar-dayname">Sun</th>
       <th class="calendar-dayname">Mon</th>
       <th class="calendar-dayname">Tue</th>
@@ -64,22 +69,42 @@
       <td class="calendar-grid-box">
         <div class="calendar-number-label">29</div>
         <div class="calendar-event-container">
-          <div class="calendar-event">event</div>
-          <div class="calendar-event">event</div>
+          <div class="calendar-event" data-toggle="popover" title="eventName" data-content="#a2"  data-trigger="focus">event</div>
+
+         <a class="calendar-event" href="#" data-toggle="popover" data-popover-content="#a2"  data-trigger="focus">event</a>
+         <div id="a2" class="hidden">
+           <div class="popover-heading">This is the heading for #2</div>
+
+           <div class="popover-body">This is the body for #2<br>
+             With <b>html</b> content
+           </div>
+         </div>
         </div>
       </td>
       <td class="calendar-grid-box">
         <div class="calendar-number-label">1</div>
         <div class="calendar-event-container">
-          <div class="calendar-event" onclick="eventClicked('12345')">event</div>
+          <div class="calendar-event" onclick="eventClicked('12345')">
+            event
+          </div>
+          <div id="12345popup" class="event-popup"></div>
           <div class="calendar-event">event</div>
         </div>
       </td>
       <td class="calendar-grid-box">
         <div class="calendar-number-label">2</div>
         <div class="calendar-event-container">
-          <div class="calendar-event">event</div>
-          <div class="calendar-event">event</div>
+          <a class="calendar-event" href="#" data-toggle="popover" data-popover-content="#EVENTID123"  data-trigger="focus">event</a>
+          <div id="EVENTID123" class="hidden">
+            <div class="popover-heading">Doctor's Appointment</div>
+
+
+            <div class="popover-body"><span class="field-name"><b>Time:</b></span> 4:00-7:00 <br>
+              <span class="field-name"><b>Location: </b></span><a href="#"> Location with clickable link here</a>
+
+            </div>
+          </div>
+         </div>
         </div>
       </td>
       <td class="calendar-grid-box">
@@ -156,7 +181,16 @@
       <td class="calendar-grid-box">
         <div class="calendar-number-label">13</div>
         <div class="calendar-event-container">
+          <a class="calendar-event" href="#" data-toggle="popover" data-popover-content="#EVENTID1234"  data-trigger="focus">event</a>
+          <div id="EVENTID1234" class="hidden">
+            <div class="popover-heading">Doctor's Appointment</div>
 
+
+            <div class="popover-body"><span class="field-name"><b>Time:</b></span> 3:00-7:00 <br>
+              <span class="field-name"><b>Location: </b></span><a href="#"> Location with clickable link here</a>
+
+            </div>
+          </div>
         </div>
       </td>
     </tr>
@@ -316,5 +350,21 @@
 </div>
 </div>
 </div>
+<script>
+$(function(){
+    $("[data-toggle=popover]").popover({
+        html : true,
+        content: function() {
+          var content = $(this).attr("data-popover-content");
+          return $(content).children(".popover-body").html();
+        },
+        title: function() {
+          var title = $(this).attr("data-popover-content");
+          return $(title).children(".popover-heading").html();
+        },
+        placement: "auto"
+    });
+});
+</script>
 </body>
 </html>
