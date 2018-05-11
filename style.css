@@ -78,6 +78,7 @@
   margin:3px;
   padding:2px;
   padding-left:5px;
+  cursor:pointer;
 
 
   border-radius:5px;
@@ -86,7 +87,7 @@
 
 .calendar-number-label{
   text-align:right;
-  background-color:		#F5F5F5;
+  background-color:	#F5F5F5;
 }
 
 table{
