@@ -1,7 +1,7 @@
 #calendar-container{
    margin: auto;
    padding: 20px;
-   width:800px;
+   width:1000px;
 }
 
 #calendar-title{
@@ -30,7 +30,7 @@
 
 
 #calendar-header{
-    padding: 70px 25px;
+    padding: 70px 0px;
     width: 100%;
     background: #1abc9c;
     text-align: center;
@@ -41,7 +41,14 @@
 }
 
 .calendar-dayname{
-  width:15%;
+  width:14%;
+  color: #666;
+  text-align: center;
+  padding:2px;
+  margin:0;
+  padding:2px;
+  background-color: #ddd;
+
 }
 
 .month-control{
@@ -52,11 +59,74 @@
 
 }
 
-.calendar-grid-week-row th{
-  width:14%
-  color: #666;
-  text-align: center;
+.calendar-grid-week-row{
+
+
+}
+
+.calendar-event-container{
+  height:100px;
+  margin:0px;
+  padding:0px;
+  padding-top:0px;
+  border-spacing: 0px;
+
+
+}
+
+.calendar-event{
+  margin:3px;
   padding:2px;
+  padding-left:5px;
+
+
+  border-radius:5px;
+  border:1px solid #DCDCDC;
+}
+
+.calendar-number-label{
+  text-align:right;
+  background-color:		#F5F5F5;
+}
+
+table{
+  border-spacing:0px;
+
+}
+
+table, td {
+  border-spacing:0px;
+    border: 1px solid #DCDCDC;
+
+
 }
 
 body {font-family: Verdana, sans-serif;}
+
+
+
+
+@media screen and (max-width:1040px) {
+  #calendar-container{
+     width:800px;
+  }
+}
+
+@media screen and (max-width:840px) {
+  #calendar-container{
+     width:680px;
+  }
+}
+
+@media screen and (max-width:720px) {
+  #calendar-container{
+     width:500px;
+  }
+}
+
+@media screen and (max-width:420px) {
+  #calendar-container{
+    width:100%;
+    padding:0px;
+  }
+}

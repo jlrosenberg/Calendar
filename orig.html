@@ -8,209 +8,312 @@
   <div id="calendar-container">
     <div id="calendar">
       <div id="calendar-header">
-      <div id="calendar-title"><h1>My Calendar</h2></div>
-      <div id="calendar-nav-bar">
-        <table id="calendar-nav-table" class="nav-bar">
-          <tbody>
-            <tr><a id="calendar-previous-month-control" class="month-control">&#10094;</a></tr>
-            <tr><span id="calendar-month-title">March 2018</span></tr>
-            <tr><a id="calendar-next-month-control" class="month-control">&#10095;</a></tr>
+        <div id="calendar-title"><h1>My Calendar</h2></div>
+          <div id="calendar-nav-bar">
+            <table id="calendar-nav-table" class="nav-bar">
+              <tbody>
+                <tr><a id="calendar-previous-month-control" class="month-control">&#10094;</a></tr>
+                <tr><span id="calendar-month-title">March 2018</span></tr>
+                <tr><a id="calendar-next-month-control" class="month-control">&#10095;</a></tr>
 
 
-          </tbody>
-        </table>
+              </tbody>
+            </table>
 
-      </div>
-    </div>
-<!--
-      <div id="calendar-daynames">
+          </div>
+        </div>
+        <!--
+        <div id="calendar-daynames">
         <table id="calendar-dayname-table">
-          <tbody>
-            <tr>
-              <th class="calendar-dayname">Sunday</th>
-              <th class="calendar-dayname">Monday</th>
-              <th class="calendar-dayname">Tuesday</th>
-              <th class="calendar-dayname">Wednesday</th>
-              <th class="calendar-dayname">Thursday</th>
-              <th class="calendar-dayname">Friday</th>
-              <th class="calendar-dayname">Saturday</th>
-            </tr>
-          </tbody>
+        <tbody>
+        <tr>
+        <th class="calendar-dayname">Sunday</th>
+        <th class="calendar-dayname">Monday</th>
+        <th class="calendar-dayname">Tuesday</th>
+        <th class="calendar-dayname">Wednesday</th>
+        <th class="calendar-dayname">Thursday</th>
+        <th class="calendar-dayname">Friday</th>
+        <th class="calendar-dayname">Saturday</th>
+      </tr>
+    </tbody>
 
-        </table>
-      </div>
+  </table>
+</div>
 -->
 
-      <div id="calendar-grid">
-        <div class="calendar-grid-week-row">
-          <table style="width:100%;">
+<div id="calendar-grid">
+  <div class="calendar-grid-week-row">
+    <table style="width:100%;">
 
-            <tr style="margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
-    width=100%;">
-              <th class="calendar-dayname">Sun</th>
-              <th class="calendar-dayname">Mon</th>
-              <th class="calendar-dayname">Tue</th>
-              <th class="calendar-dayname">Wed</th>
-              <th class="calendar-dayname">Thu</th>
-              <th class="calendar-dayname">Fri</th>
-              <th class="calendar-dayname">Sat</th>
-            </tr>
+      <tr style="background-color: #ddd;
+      width=100%;">
+      <th class="calendar-dayname">Sun</th>
+      <th class="calendar-dayname">Mon</th>
+      <th class="calendar-dayname">Tue</th>
+      <th class="calendar-dayname">Wed</th>
+      <th class="calendar-dayname">Thu</th>
+      <th class="calendar-dayname">Fri</th>
+      <th class="calendar-dayname">Sat</th>
+    </tr>
 
-            <!--Numbers, Then Underneath EventBoxes-->
-            <tr>
-              <td class="calendar-number-label">1</td>
-              <td class="calendar-number-label">2</td>
-              <td class="calendar-number-label">3</td>
-              <td class="calendar-number-label">4</td>
-              <td class="calendar-number-label">5</td>
-              <td class="calendar-number-label">6</td>
-              <td class="calendar-number-label">7</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-              <td>
-              </td>
-              <td></td>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-              <td>
-              </td>
-              <td></td>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="calendar-number-label">8</td>
-              <td class="calendar-number-label">9</td>
-              <td class="calendar-number-label">10</td>
-              <td class="calendar-number-label">11</td>
-              <td class="calendar-number-label">12</td>
-              <td class="calendar-number-label">13</td>
-              <td class="calendar-number-label">14</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-              <td>
-                <div class="calendar-event-container"></div>
-              </td>
-              <td>
-                <div class="calendar-event-container"></div>
-              </td>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-              <td>
-                <div class="calendar-event-container"></div>
-              </td>
-              <td>
-                <div class="calendar-event-container"></div>
-              </td>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="calendar-number-label">15</td>
-              <td class="calendar-number-label">16</td>
-              <td class="calendar-number-label">17</td>
-              <td class="calendar-number-label">18</td>
-              <td class="calendar-number-label">19</td>
-              <td class="calendar-number-label">20</td>
-              <td class="calendar-number-label">21</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-              <td>
-              </td>
-              <td></td>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-              <td>
-              </td>
-              <td></td>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="calendar-number-label">22</td>
-              <td class="calendar-number-label">23</td>
-              <td class="calendar-number-label">25</td>
-              <td class="calendar-number-label">25</td>
-              <td class="calendar-number-label">26</td>
-              <td class="calendar-number-label">27</td>
-              <td class="calendar-number-label">28</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-              <td>
-              </td>
-              <td>
-              </td>
-              <td></td>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-              <td></td>
-              <td>
-                <div class="calendar-event-container">
-                  <div class="calendar-event">event</div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="calendar-number-label">29</td>
-              <td class="calendar-number-label">30</td>
-              <td class="calendar-number-label">31</td>
-              <td class="calendar-number-label">1</td>
-              <td class="calendar-number-label">2</td>
-              <td class="calendar-number-label">3</td>
-              <td class="calendar-number-label">4</td>
-            </tr>
-          </table>
+
+
+    <!--Numbers, Then Underneath EventBoxes-->
+    <tr>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">29</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
         </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">1</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">2</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">3</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">4</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
 
-      </div>
-    </div>
-  </div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">5</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">6</div>
+        <div class="calendar-event-container">
+
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">7</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">8</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">9</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">10</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">11</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">12</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">13</div>
+        <div class="calendar-event-container">
+
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">14</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">15</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">16</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">17</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">18</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">19</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">20</div>
+        <div class="calendar-event-container">
+
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">21</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">22</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">23</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">24</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">25</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">26</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">27</div>
+        <div class="calendar-event-container">
+
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">28</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">29</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">30</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">31</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">1</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">2</div>
+        <div class="calendar-event-container">
+          <div class="calendar-event">event</div>
+          <div class="calendar-event">event</div>
+        </div>
+      </td>
+      <td class="calendar-grid-box">
+        <div class="calendar-number-label">3</div>
+        <div class="calendar-event-container">
+
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</div>
+</div>
+</div>
 </body>
 </html>
