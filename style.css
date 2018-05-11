@@ -1,0 +1,63 @@
+#calendar-container{
+   margin: auto;
+   padding: 20px;
+   width:800px;
+}
+
+#calendar-title{
+  margin: auto;
+  text-align: center;
+  width:100%;
+}
+
+#calendar-month-title{
+  padding:20px;
+}
+
+#calendar-previous-month-control{
+  text-align:left;
+}
+
+#calendar-next-month-control{
+  text-align:right;
+}
+
+#calendar-nav-bar{
+  margin:auto;
+  width:100%;
+  text-align:center;
+}
+
+
+#calendar-header{
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+#calendar-daynames{
+  background: #1abc9c;
+}
+
+.calendar-dayname{
+
+}
+
+.month-control{
+  cursor:pointer;
+}
+
+.nav-bar h2{
+
+}
+
+.calendar-grid-week-row th{
+  width:14%
+  color: #666;
+    display: inline-block;
+    text-align: center;
+    padding:2px;
+}
+
+body {font-family: Verdana, sans-serif;}
