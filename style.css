@@ -41,7 +41,7 @@
 }
 
 .calendar-dayname{
-
+  width:15%;
 }
 
 .month-control{
@@ -55,9 +55,8 @@
 .calendar-grid-week-row th{
   width:14%
   color: #666;
-    display: inline-block;
-    text-align: center;
-    padding:2px;
+  text-align: center;
+  padding:2px;
 }
 
 body {font-family: Verdana, sans-serif;}
