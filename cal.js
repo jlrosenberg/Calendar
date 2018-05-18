@@ -34,3 +34,20 @@ function generateEventPopupHTML(eventID){
 "<span class=\"close\" onclick=\"hideElementByID('12345popup')\">&times;</span>"+
     "<p>Some text in the Popup..</p></div>";
 }
+
+//Will eventually populate this by importing from an ical
+var eventlist= [new Event("")];
+
+// ICalendarEvent -> Event
+function Event(iev){
+  this.title="";
+  this.color="";
+  this.description="";
+  this.location="";
+  this.date="";
+  this.calendarid="";
+  this.weekday="";
+  this.month="";
+  this.year="";
+
+}
